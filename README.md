@@ -1,0 +1,3 @@
+- Install NPM dependencies by `npm install`
+- Run app using : `node server.js`
+- Access on browser at : `http://localhost:3000`
