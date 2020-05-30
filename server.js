@@ -20,10 +20,10 @@ app.post("/users/create", async (req, res) => {
     await client.connect();
     console.log("Connected correctly to server");
     const db = client.db(dbName);
-    console.log("Database:", db);
 
     const userCollection = db.collection("users");
-    console.log("Users Collection:", userCollection);
+
+    console.log("USer Data:", req.body);
   } catch (err) {
     console.log(err.stack);
   }
