@@ -24,7 +24,7 @@ app.post("/users/create", async (req, res) => {
 
     const userCollection = db.collection("users");
     console.log("Users Collection:", userCollection);
-  } catch (e) {
+  } catch (err) {
     console.log(err.stack);
   }
   res.status(200).send(req.body);
