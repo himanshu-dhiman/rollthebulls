@@ -62,11 +62,11 @@ app.post("/users/create", async (req, res) => {
        });
 
     //Print all the documents in the collection
-    userCollection.find({}).toArray(function(err, result){
-      if(err) throw err;
-      console.log(result);
-      //userCollection.close();
-    });
+    userCollection.find({}).toArray(
+      function(err, result){
+        if(err) throw err;
+        console.log(result);
+      });
 
   } catch (err) {
     console.log(err.stack);
